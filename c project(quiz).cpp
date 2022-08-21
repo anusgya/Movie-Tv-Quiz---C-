@@ -27,7 +27,7 @@ int main(){
 	
 	printf("****Welcome to Movie&Tv Quiz****\n\n\n");
 	
-	printf("Here are a few guidelines before you begin:\n\n");
+	printf("Here are few guidelines before you begin:\n\n");
 	printf("1. You will be quizzed on 10 movies and tv-shows related questions and you will be given 4 options for each.\n");
 	printf("2. You are required to enter the answer no. of the answer you think is correct.\n");
 	printf("3. If your answer is correct, you will get a score of 10 points.\n");
