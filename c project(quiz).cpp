@@ -45,9 +45,10 @@ int main(){
 	}else 
 		return 0;
 	
-	printf("--------------------------------------------------");
-	printf("\n\nYour final score is %d out of 100. Way to go!", score);
-	printf("--------------------------------------------------");
+	system("cls");
+	printf("\n\n--------------------------------------------------\n");
+	printf("Your final score is %d out of 100. Way to go!\n", score);
+	printf("--------------------------------------------------\n\n");
 	
 	return 0;	
 }
@@ -135,7 +136,7 @@ void play_quiz(struct quiz q[50]){
 		system("cls");
 		
 		printf("\n\nYour current score is %d/100\n", score);
-		printf("--------------------------------");
+		printf("----------------------------");
 		
 		printf("\n\n%s\n\n", q[i].question);
 		printf("%s\t%s\n%s\t%s\n\n", q[i].option1, q[i].option2, q[i].option3, q[i].option4);
