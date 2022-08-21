@@ -27,7 +27,7 @@ int main(){
 	
 	printf("****Welcome to Movie&Tv Quiz****\n\n\n");
 	
-	printf("Here are the rules before you begin:\n\n");
+	printf("Here are a few guidelines before you begin:\n\n");
 	printf("1. You will be quizzed on 10 movies and tv-shows related questions and you will be given 4 options for each.\n");
 	printf("2. You are required to enter the answer no. of the answer you think is correct.\n");
 	printf("3. If your answer is correct, you will get a score of 10 points.\n");
@@ -72,7 +72,7 @@ void get_questions(struct quiz q[50]){
 		strcpy(q[2].option4, "4.The Wolf of Wall Street");
 		q[2].answer_no = 2;
 		
-		strcpy(q[3].question, "4. Which country did Chandler tell Janice he was moving to so he could break up with her in ‘Friends’");
+		strcpy(q[3].question, "4. Which country did Chandler tell Janice he was moving to so he could break up with her in â€˜Friendsâ€™");
 		strcpy(q[3].option1, "1.Vietnam");
 		strcpy(q[3].option2, "2.Yemen");
 		strcpy(q[3].option3, "3.Mongolia");
