@@ -131,9 +131,8 @@ void play_quiz(struct quiz q[50]){
 		
 		system("cls");
 		printf("\n\nYour current score is %d/100\n\n\n", score);
-					
-		printf("%s\n\n", q[i].question);
 		
+		printf("%s\n\n", q[i].question);
 		printf("%s\t%s\n%s\t%s\n\n", q[i].option1, q[i].option2, q[i].option3, q[i].option4);
 		
 		scanf("%d",&ans);
@@ -142,7 +141,8 @@ void play_quiz(struct quiz q[50]){
 			printf("Correct!!");
 			score += 10;
 		}else{
-			printf("Sorry, incorrect.");
+			printf("Sorry, incorrect.\n");
+			printf("The correct answer is no.%d",q[i].answer_no);
 		}
 		
 		getch();
