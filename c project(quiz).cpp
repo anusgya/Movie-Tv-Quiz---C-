@@ -142,7 +142,7 @@ void play_quiz(struct quiz q[50]){
 			score += 10;
 		}else{
 			printf("Sorry, incorrect.\n");
-			printf("The correct answer is no.%d",q[i].answer_no);
+			printf("The correct answer no. is %d",q[i].answer_no);
 		}
 		
 		getch();
