@@ -25,9 +25,11 @@ int main(){
 
 	char play;
 	
-	printf("****Welcome to Movie&Tv Quiz****\n\n\n");
+	printf("*********************************\n");
+	printf("Welcome to Movie&Tv Quiz\n");
+	printf("*********************************");
 	
-	printf("Here are few guidelines before you begin:\n\n");
+	printf("\n\nPlease read these guidelines before you begin:\n\n");
 	printf("1. You will be quizzed on 10 movies and tv-shows related questions and you will be given 4 options for each.\n");
 	printf("2. You are required to enter the answer no. of the answer you think is correct.\n");
 	printf("3. If your answer is correct, you will get a score of 10 points.\n");
@@ -43,8 +45,9 @@ int main(){
 	}else 
 		return 0;
 	
-	
+	printf("--------------------------------------------------");
 	printf("\n\nYour final score is %d out of 100. Way to go!", score);
+	printf("--------------------------------------------------");
 	
 	return 0;	
 }
@@ -130,9 +133,11 @@ void play_quiz(struct quiz q[50]){
 	for(int i=0;i<10;i++){
 		
 		system("cls");
-		printf("\n\nYour current score is %d/100\n\n\n", score);
 		
-		printf("%s\n\n", q[i].question);
+		printf("\n\nYour current score is %d/100\n", score);
+		printf("--------------------------------");
+		
+		printf("\n\n%s\n\n", q[i].question);
 		printf("%s\t%s\n%s\t%s\n\n", q[i].option1, q[i].option2, q[i].option3, q[i].option4);
 		
 		scanf("%d",&ans);
@@ -152,4 +157,3 @@ void play_quiz(struct quiz q[50]){
 	}
 	
 }
-
